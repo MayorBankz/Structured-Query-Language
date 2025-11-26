@@ -1,4 +1,4 @@
-# TryHackMe - Introduction to Structured Query Language (SQL)
+# Introduction to Structured Query Language (SQL)
 * Date: 24-11-2025
 
 ## What is SQL?
