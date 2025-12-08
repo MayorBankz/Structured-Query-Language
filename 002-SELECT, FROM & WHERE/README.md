@@ -14,6 +14,7 @@ Can be used with functions such as COUNT(), SUM(), AVG(), etc.
 Example
 
 SELECT <i>first_name, last_name</i>
+
 FROM <i>employees;</i>
 
 * This query retrieves only the first_name and last_name columns from the employees table.
@@ -27,6 +28,7 @@ Indicates the table or tables (in joins) you are selecting data from.
 Example
 
 SELECT *
+
 FROM products;
 
 * means select all columns from the products table.
@@ -46,7 +48,8 @@ Purpose
 *  IN (multiple values)
 
 SELECT *
-FROM <i>employees</i<
+FROM <i>employees</i>
+
 WHERE department = <i>'IT';</i>
 
 * This returns only employees who belong to the IT department.
@@ -55,7 +58,9 @@ WHERE department = <i>'IT';</i>
 Full example query 
 
 SELECT first_name, salary
+
 FROM employees
+
 WHERE salary > 50000;
 
 Explanation
@@ -65,7 +70,9 @@ Explanation
 
 ## MULTIPLE CONDITIONS EXAMPLE
 SELECT *
+
 FROM <i></i>customers</i>
+
 WHERE <i>country = 'USA' AND age > 25;</i>
 
 Returns customers who:
