@@ -80,3 +80,51 @@ Returns customers who:
 * Are older than 25
 
 
+## Practical Example - MySQL
+
+A database parks and recreation is used in this session. It consists of the following tables;
+* employee_demographics
+* employee_salary
+* parks_departments
+
+### Task 1
+Using the "SELECT & FROM" query to view the entire table
+* SELECT all columns (*) FROM employee_demographics; 
+
+<img width="1007" height="691" alt="image" src="https://github.com/user-attachments/assets/f9ef3098-1678-494d-9f3f-1d9a42e58a49" />
+
+
+* SELECT all columns (*) FROM parks_and_recreation.employee_demographics;
+* The query "parks_and_recreation.employee_demographics" means from table (employee_demographics) from database (parks_and_recreation).
+  
+<img width="897" height="564" alt="image" src="https://github.com/user-attachments/assets/26bf491e-2428-4086-9766-d65f756e5fe1" />
+
+* SELECT the columns first_name, last_name, birth_date, age from the table (employee_demographics) from the database (parks_and_recreation)
+  
+<img width="994" height="520" alt="image" src="https://github.com/user-attachments/assets/9e6dabc2-0a41-4a37-a7fd-7c360b6f705d" />
+
+
+
+* SELECT the column first_name from the table (employee_demographics) from the database (parks_and_recreation), where the row for column first_name is 'Leslie"
+<img width="855" height="405" alt="image" src="https://github.com/user-attachments/assets/46531fc9-2d3c-404c-a18f-3c725be6c26e" />
+
+* SELECT all columns from the table (employee_salary) from database (parks_and_recreation) WHERE salary is greater than or equal to (>=) 50000.
+
+<img width="1109" height="512" alt="image" src="https://github.com/user-attachments/assets/9872ba85-1dd5-4c31-842b-167d0e08d14f" />
+
+
+* SELECT all columns from table (employee_demographics) from database (parks_and_recreation), WHERE gender is not equal to (!=) female.
+  
+<img width="1014" height="475" alt="image" src="https://github.com/user-attachments/assets/cdf17426-3d25-44c2-9a48-958d58df127c" />
+
+
+
+
+
+
+
+
+
+
+
+
