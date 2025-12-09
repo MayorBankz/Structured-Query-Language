@@ -61,4 +61,18 @@ FROM <i>Customers;</i>
 * This returns unique combinations of Country + CustomerName
 
 
+## Practical - PEMDAS + DISTINCT
+
+
+* SELECT the columns first_name, last_name, birth_date, age FROM table (employee_demographics). another column will be created in this case because of the arithmetic (PEMDAS)
+
+<img width="964" height="554" alt="image" src="https://github.com/user-attachments/assets/290fc333-bd45-4bee-afbc-b74aa452d14b" />
+
+* SELECT unique values (DISTINCT) from the column (gender)
+
+<img width="1007" height="469" alt="image" src="https://github.com/user-attachments/assets/43cca331-5bcf-4d70-b329-9f5a9efb3c21" />
+
+
+
+
 
