@@ -87,6 +87,15 @@ A database parks and recreation is used in this session. It consists of the foll
 * employee_salary
 * parks_departments
 
+## Table 1 - employee_demographics
+
+<img width="910" height="511" alt="image" src="https://github.com/user-attachments/assets/66a54abd-ee7a-4e33-b0ab-ef010395390c" />
+
+## Table 2 - employee_salary
+
+<img width="962" height="546" alt="image" src="https://github.com/user-attachments/assets/428a56b2-68a3-4c38-9970-6c3ae478c22c" />
+
+
 ### Task 1
 Using the "SELECT & FROM" query to view the entire table
 * SELECT all columns (*) FROM employee_demographics; 
