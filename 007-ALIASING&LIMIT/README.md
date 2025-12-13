@@ -153,3 +153,27 @@ LIMIT 5 OFFSET 10;
 
 ### LIMIT
 
+* SELECT all columns FROM table (employee_demographics) and LIMIT the rows to 3
+  
+<img width="865" height="493" alt="image" src="https://github.com/user-attachments/assets/e836a60d-151b-42b9-8550-1c38103c4335" />
+
+### LIMIT & ORDER BY
+
+* SELECT all columns FROM table (employee_demographics), arrange the age  ascending order (ORDER BY) and LIMIT the rows to 3
+    
+<img width="886" height="508" alt="image" src="https://github.com/user-attachments/assets/c74724de-7abf-40f8-809f-64baa01a178e" />
+
+### LIMIT with OFFSET
+
+* SELECT all columns FROM table (employee_demographics), arrange the age  ascending order (ORDER BY) and LIMIT the rows to 5 omit the first 3 rows (OFFSET)
+  
+<img width="861" height="515" alt="image" src="https://github.com/user-attachments/assets/658de26e-38a5-453b-b2dd-f7ed534c5a0d" />
+
+
+### ALIASING 
+
+* SELECT the column gender, aggregate with function AVG(age) aliasing as avg_age FROM table (employee_demographics) , then group by gender
+<img width="851" height="445" alt="image" src="https://github.com/user-attachments/assets/5b7a8908-0969-4a30-9c7b-1331541ba063" />
+
+
+
