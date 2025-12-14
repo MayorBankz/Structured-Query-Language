@@ -143,6 +143,7 @@ LIMIT 5 OFFSET 10;
 ### SUMMARY
 
 | CLAUSE | PURPOSE |
+| ------ | ------- |
 | ORDER BY | Sorts the result set |
 | ASC | sorts in ascending order (default) |
 | DESC | sorts in descending order |
