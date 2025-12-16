@@ -99,3 +99,7 @@ UNION helps you combine multiple query results into one clean dataset, making it
 <img width="1066" height="873" alt="image" src="https://github.com/user-attachments/assets/1a0f8629-3412-453c-be53-d84fa91da3e8" />
 
 <img width="937" height="563" alt="image" src="https://github.com/user-attachments/assets/582b7413-6b16-4ba0-9196-363be140576e" />
+
+* UNION & ORDER BY FUNCTION
+
+<img width="965" height="636" alt="image" src="https://github.com/user-attachments/assets/25a91cd7-3939-477d-927b-95fae3cef15c" />
