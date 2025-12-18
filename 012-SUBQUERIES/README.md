@@ -73,4 +73,20 @@ WHERE customer_id IN (
 
 ## Practical Example 
 
+* SUBQUERIES - In this example, we are classifying our table (table_demographics) based on employee_id from another table(parks_departments) where the department ID is equals to 1.
+
+<img width="907" height="600" alt="image" src="https://github.com/user-attachments/assets/84bff6f4-ca62-4adf-8bf8-6c3912f860d3" />
+
+* SELECT the columns first_name and salary from the table (employee_salary), and calculate the average salary from the table employee_salary
+
+<img width="978" height="472" alt="image" src="https://github.com/user-attachments/assets/ded8e24b-d2e7-4038-94f1-152413c4fe98" />
+
+* Calculate the average maximum age of the subquery from employee_demographics
+*  
+
+<img width="1065" height="687" alt="image" src="https://github.com/user-attachments/assets/20cd4d46-eaac-4e24-9cc8-1962956def83" />
+
+
+  
+
 
