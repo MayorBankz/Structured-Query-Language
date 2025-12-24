@@ -89,3 +89,5 @@ Use a CTE when
 ### Practical Example 
 
 <img width="1060" height="402" alt="image" src="https://github.com/user-attachments/assets/42ed5049-b516-42b8-a4ba-154ee861625f" />
+<img width="744" height="556" alt="image" src="https://github.com/user-attachments/assets/7457a69d-b77f-48bf-8f51-4a5c734df6eb" />
+
