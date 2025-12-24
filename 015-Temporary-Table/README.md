@@ -91,4 +91,12 @@ Use temporary tables when:
 * You need data across multiple SQL statements
 * Working with large or complex transformations
 * Performance tuning is required
+
+## Practical 
+
+<img width="902" height="458" alt="image" src="https://github.com/user-attachments/assets/33635ea4-44c2-4f85-adda-e7b5f05442bb" />
+
+* Creating a temporary table off an existing table
+<img width="905" height="463" alt="image" src="https://github.com/user-attachments/assets/921d81ab-2a21-4064-85e7-a7815b83a996" />
+
   
