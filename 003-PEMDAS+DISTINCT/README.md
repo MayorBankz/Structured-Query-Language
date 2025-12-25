@@ -41,10 +41,12 @@ Assume you have a table called customers
 | Michael | Canada |
 | John | USA |
 
-<i>SELECT DISTINCT</i> Country
+```sql
+SELECT DISTINCT Country
 
-<i>FROM</i> Customers;
+FROM Customers;
 
+```
 Result 
 | Country |
 | ------ |
@@ -54,9 +56,10 @@ Result
 * SQL will return only unique countries, even though "USA" appears multiple times.
 
 ### Another example with multiple columns
-SELECT DISTINCT <i>Country, CustomerName</i>
-
-FROM <i>Customers;</i>
+```sql
+SELECT DISTINCT Country, CustomerName
+FROM Customers;
+```
 
 * This returns unique combinations of Country + CustomerName
 
