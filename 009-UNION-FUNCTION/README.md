@@ -19,16 +19,13 @@ UNION is an SQL operator used to combine the result sets of two or more SELECT q
 
 ### Basic Syntax
 
-<i>SELECT column1, column2
-
-FROM table1
-
-UNION
-
+```sql
 SELECT column1, column2
-
-FROM table2;</i>
-
+FROM table1
+UNION
+SELECT column1, column2
+FROM table2;
+```
 
 ### Example 
 
@@ -39,11 +36,11 @@ Assume we have two tables:
 
 Query 
 
-<i>SELECT name FROM Customers_Nigeria
-
+```sql
+SELECT name FROM Customers_Nigeria
 UNION
-
-SELECT name FROM Customers_Ghana;</i>
+SELECT name FROM Customers_Ghana;
+```
 
 ### RESULT - A single list of customer names from both tables, with no duplicates.
 
@@ -56,11 +53,11 @@ SELECT name FROM Customers_Ghana;</i>
 
 ### Example
 
-<i>SELECT name FROM Customers_Nigeria
-
+```sql
+SELECT name FROM Customers_Nigeria
 UNION ALL
-
-SELECT name FROM Customers_Ghana;</i>
+SELECT name FROM Customers_Ghana;
+```
 
 ### When to use UNION
 
@@ -74,13 +71,12 @@ SELECT name FROM Customers_Ghana;</i>
 * Column names in the final result come from the first SELECT statement
 * ORDEY BY can only be used at the end of the UNION query
 
-<i>SELECT name FROM Customers_Nigeria
-
+```sql
+SELECT name FROM Customers_Nigeria
 UNION
-
 SELECT name FROM Customers_Ghana
-
-ORDER BY name;</i>
+ORDER BY name;
+```
 
 ## SUMMARY 
 
