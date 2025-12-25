@@ -10,37 +10,37 @@ Logical operations in SQL are used to combine, filter, and control how condition
 
 Example:
 
+```sql
 SELECT * 
-
 FROM Customers
-
 WHERE Country = 'USA'
-
   AND Age > 25;
+```
+
 This returns customers who are both in the USA and older than 25.
 
 2. OR - The OR operator is used when at least one condition must be true.
 
  Example 
 
+```
  SELECT * 
- 
  FROM Customers
-
 WHERE City = 'Lagos'
-  
    OR City = 'Abuja';
+```
+
 This returns customers who are either in Lagos or Abuja.
 
 3. NOT - The NOT operator is used to exclude a condition.
 
 Example 
 
+```sql
 SELECT *
-
 FROM Products
-
 WHERE NOT Category = 'Electronics';
+```
 
 This returns products that are not in the Electronics category.
 
@@ -48,11 +48,11 @@ This returns products that are not in the Electronics category.
 
 Example
 
+```sql
 SELECT * 
-
 FROM Orders
-
 WHERE OrderAmount BETWEEN 1000 AND 5000;
+```
 
 Returns orders with amount from 1000 to 5000.
 
@@ -60,11 +60,11 @@ Returns orders with amount from 1000 to 5000.
 
 Example 
 
+```sql
 SELECT * 
-
 FROM Employees
-
 WHERE Department IN ('HR', 'Finance', 'IT');
+```
 
 Returns employees in HR, Finance, or IT.
 
@@ -72,21 +72,21 @@ Returns employees in HR, Finance, or IT.
 
 Example 
 
+```sql
 SELECT * 
-
 FROM Customers
-
 WHERE Name LIKE 'J%';
+```
 
 Returns customers whose names start with ‘J’.
 
 7. IS NULL / IS NOT NULL - Used to check for NULL values (empty or unknown data).
 
+```sql
 SELECT * 
-
 FROM Students
-
 WHERE Email IS NULL;
+```
 
 Returns students without an email address.
 
