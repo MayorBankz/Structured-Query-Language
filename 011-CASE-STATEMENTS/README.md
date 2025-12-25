@@ -20,6 +20,7 @@ It works like an IF–ELSE statement, allowing you to return different values ba
 ### SYNTAX 
 1. SIMPLE CASE - Used when comparing a single column to multiple values.
 
+```sql
    CASE column
 
      WHEN value1 THEN result1
@@ -30,9 +31,9 @@ It works like an IF–ELSE statement, allowing you to return different values ba
  ELSE default_result
 
 END
-
+```
 2. SEARCHED CASE - Used when evaluating different conditions.
-
+```sql
 CASE
    
     WHEN condition1 THEN result1
@@ -41,9 +42,10 @@ CASE
     
     ELSE default_result
 END
+```
 
 ### Example - Categorizing Data
-
+```sql
 SELECT customer_name,
        CASE
           
@@ -52,12 +54,14 @@ SELECT customer_name,
            ELSE 'Basic'
        END AS customer_category
 FROM customers;
+```
 
 ### Explanation
 Customers are classified as Premium, Regular, or Basic based on their total purchase amount.
 
 ## Example 2 - Using CASE with Numbers
 
+```sql
 SELECT score,
        CASE
           
@@ -65,9 +69,9 @@ SELECT score,
            ELSE 'Fail'
           END AS result
 FROM students;
-
+```
 3. CASE in ORDER BY
-
+```sql
    SELECT name, status
  FROM users
 ORDER BY
@@ -75,7 +79,7 @@ CASE
     WHEN status = 'Active' THEN 1
     ELSE 2
 END;
-
+```
 ## Explanation
 
 Active users are listed first.
