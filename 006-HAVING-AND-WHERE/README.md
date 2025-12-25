@@ -23,11 +23,11 @@ Example
 
 Get all customers from the city Lagos.
 
+```sql
 SELECT *
-
 FROM Customers
-
 WHERE City = 'Lagos';
+```
 
 Here, SQL checks each row and only returns rows that meet the condition.
 
@@ -48,13 +48,13 @@ To filter groups after aggregation
 
 Get only those cities where the number of customers is more than 5.
 
+```sql
 SELECT City, COUNT(*) AS TotalCustomers
-
 FROM Customers
-
 GROUP BY City
-
 HAVING COUNT(*) > 5;
+```
+
 Here:
 
 * SQL groups customers by city.
