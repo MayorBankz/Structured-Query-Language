@@ -10,14 +10,15 @@ String functions in SQL are used to manipulate and analyze text (character data)
 i). Length - Returns the number of characters in a string.
 
 ### SYNTAX
-
+```sql
 LENGTH(string)
-
+```
 ### Example
 
+```sql
 SELECT LENGTH('Database');
-
-Output: 8
+```
+`Output:` 8
 
 ii). UPPER - Converts all characters in a string to uppercase.
 
@@ -26,10 +27,10 @@ ii). UPPER - Converts all characters in a string to uppercase.
 UPPER(string)
 
 ### Example
-
+```sql
 SELECT UPPER('sql functions');
-
-Output: SQL FUNCTIONS
+```
+`Output:` SQL FUNCTIONS
 
 iii). LOWER - Converts all characters in a string to lowercase.
 
@@ -38,10 +39,10 @@ iii). LOWER - Converts all characters in a string to lowercase.
 LOWER(string)
 
 ### Example
-
+```sql
 SELECT LOWER('HELLO WORLD');
-
-Output: hello world
+```
+`Output:` hello world
 
 iv). TRIM (LEFT & RIGHT) - Removes unwanted spaces from a string.
 
@@ -50,86 +51,93 @@ iv). TRIM (LEFT & RIGHT) - Removes unwanted spaces from a string.
 * RTRIM → removes spaces from the right
 
 ### SYNTAX
-
+```sql
 TRIM(string)
 LTRIM(string)
 RTRIM(string)
+```
 
 ### Example 
-
+```sql
 SELECT TRIM('   SQL   ');
-
-Output: SQL
+```
+`Output:` SQL
 
 v). LEFT - Extracts a specified number of characters from the left side of a string.
 
 ### SYNTAX
-
+```sql
 LEFT(string, number)
+```
 
 ### Example 
-
+```sql
 SELECT LEFT('Database', 4);
+```
 
 vi) RIGHT - Extracts a specified number of characters from the right side of a string.
 
 ### SYNTAX 
-
+```sql
 RIGHT(string, number)
+```
 
 ### Example 
-
+```sql
 SELECT RIGHT('Database', 4);
-
-Output: base
+```
+`Output:` base
 
 vii) SUBSTRING - Extracts part of a string starting from a given position.
 
 ### SYNTAX
-
+```sql
 SUBSTRING(string, start, length)
+```
 
 ### Example
-
+```sql
 SELECT SUBSTRING('Database', 2, 4);
-
-Output: atab
+```
+`Output:` atab
 
 viii). REPLACE - Replaces all occurrences of a substring with another substring.
 
 ### SYNTAX
-
+```sql
 REPLACE(string, old_value, new_value)
+```
 
 ### Example 
-
+```sql
 SELECT REPLACE('I love SQL', 'SQL', 'Databases');
-
-Output: I love Databases
+```
+`Output:` I love Databases
 
 ix). LOCATE - Finds the position of a substring within a string.
 
 ### SYNTAX
-
+```sql
 LOCATE(substring, string)
+```
 
 ### Example
-
+```sql
 SELECT LOCATE('SQL', 'I love SQL');
-
-Output: 8
+```
+`Output:` 8
 
 x). CONCAT - Combines two or more strings into one.
 
 ### SYNTAX
-
+```sql
 CONCAT(string1, string2, ...)
-
+```
 ### Example
-
+```sql
 SELECT CONCAT('Hello', ' ', 'World');
-
-Output: Hello World
+```
+`Output:` Hello World
 
 ## SUMMARY 
 
