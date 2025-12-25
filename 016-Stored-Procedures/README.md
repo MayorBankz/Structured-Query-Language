@@ -16,8 +16,10 @@ Think of it like a function in programming, but for SQL.
 
 1. Basic Stored Procedure (No Parameters)
 
+
    * Create Procedure
 
+```sql
   DELIMITER $$
 
 CREATE PROCEDURE GetAllCustomers()
@@ -29,17 +31,20 @@ BEGIN
 END$$
 
 DELIMITER ;
+```
 
 * Execute Procedure
 
+```sql
 CALL GetAllCustomers();
+```
 
 2. Stored Procedure with Input Parameter
    
 * Example: Get customer by ID
 
+```sql
   DELIMITER $$
-
 
 CREATE PROCEDURE GetCustomerById(IN cust_id INT)
 
@@ -52,6 +57,7 @@ BEGIN
 END$$
 
 DELIMITER ;
+```
 
 * Execute CALL GetCustomerById(3);
 
@@ -60,6 +66,7 @@ DELIMITER ;
 
 * Example: Customers by City
 
+```sql
  DELIMITER $$
 
 CREATE PROCEDURE GetCustomersByCity(IN city_name VARCHAR(50))
@@ -73,11 +80,12 @@ BEGIN
 END$$
 
 DELIMITER ;
-
+```
 * Execute CALL GetCustomersByCity('Lagos');
 
 4. Stored Procedure for INSERT
 
+```sql
 DELIMITER $$
 
 CREATE PROCEDURE AddCustomer(
@@ -91,11 +99,12 @@ BEGIN
 END$$
 
 DELIMITER ;
-
+```
 * Execute CALL CheckOrderAmount(750);
 
 5. Stored Procedure with IF Condition
 
+```sql
 DELIMITER $$
 
 CREATE PROCEDURE CheckOrderAmount(IN amount DECIMAL(10,2))
@@ -110,13 +119,14 @@ BEGIN
 END$$
 
 DELIMITER ;
-
+```
 * Execute CALL CheckOrderAmount(750);
 
 6. Delete Stored Procedure
 
+```sql
 DROP PROCEDURE IF EXISTS GetAllCustomers;
-
+```
 
 ### Key Points to Remember
 
