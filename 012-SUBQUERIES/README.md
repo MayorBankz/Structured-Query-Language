@@ -19,25 +19,26 @@ Subqueries help you:
 * Perform complex calculations in a simple way
 
 ### BASIC SYNTAX
-
+```sql
 SELECT column_name
 FROM table_name
 WHERE column_name operator (
     SELECT column_name
     FROM table_name
 );
+```
 
 ### Example 1: Subquery in WHERE
 
 Question: List customers who placed orders above the average order amount.
-
+```sql
 SELECT customer_name
 FROM orders
 WHERE order_amount > (
     SELECT AVG(order_amount)
     FROM orders
 );
-
+```
 * The subquery finds the average order amount
 * The outer query returns customers with orders greater than that average
 
@@ -45,13 +46,14 @@ WHERE order_amount > (
 
 Question: Find customers who have placed at least one order.
 
+```sql
 SELECT customer_name
 FROM customers
 WHERE customer_id IN (
     SELECT customer_id
     FROM orders
 );
-
+```
 ✔ The subquery returns customer IDs from the orders table
 ✔ The outer query matches them in the customers table
 
