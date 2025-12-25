@@ -18,11 +18,11 @@ Why use LIMIT?
 
 ### Example
 
+```sql
 SELECT *
-
 FROM employees
-
 LIMIT 5;
+```
 
 Explanation:
 This query returns only the first 5 rows from the employees table.
@@ -31,11 +31,11 @@ This query returns only the first 5 rows from the employees table.
 
 Example
 
+```sql
 SELECT *
-
 FROM employees
-
 LIMIT 5 OFFSET 10;
+```
 
 ### Explanation:
 
@@ -59,9 +59,10 @@ Why use Aliases?
 
 #### Example
 
+```sql
 SELECT salary AS monthly_salary
-
 FROM employees;
+```
 
 Explanation:
 
@@ -69,9 +70,10 @@ The column salary will appear as monthly_salary in the result.
 
 ### Table Alias
 
+```sql
 SELECT e.name, e.department
-
 FROM employees AS e;
+```
 
 Explanation:
 
@@ -83,9 +85,10 @@ Explanation:
 
 AS is optional in most SQL databases.
 
+```sql
 SELECT salary monthly_salary
-
 FROM employees e;
+```
 
 ## COMBINING ORDER BY with LIMIT in SQL
 
@@ -106,13 +109,12 @@ Why Use Them Together?
 
 ### EXAMPLE
 
+```sql
 SELECT name, salary
-
 FROM employees
-
 ORDER BY salary DESC
-
 LIMIT 5;
+```
 
 ### Explanation:
 
@@ -123,14 +125,12 @@ LIMIT 5;
 
 ## USING OFFSET WITH ORDER BY and LIMIT
 
+```sql
 SELECT *
-
 FROM employees
-
 ORDER BY employee_id
-
 LIMIT 5 OFFSET 10;
-
+```
 
 ### Explanation:
 
