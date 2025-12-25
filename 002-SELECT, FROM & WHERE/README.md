@@ -14,8 +14,8 @@ Can be used with functions such as COUNT(), SUM(), AVG(), etc.
 Example
 
 ```sql
-    SELECT <i>first_name, last_name</i>
-    FROM <i>employees;</i>
+    SELECT first_name, last_name
+    FROM employees;
 ```
 
 * This query retrieves only the first_name and last_name columns from the employees table.
@@ -49,8 +49,8 @@ Purpose
 
 ```sql
 SELECT *
-FROM <i>employees</i>
-WHERE department = <i>'IT';</i>
+FROM employees
+WHERE department = 'IT';
 ```
 
 * This returns only employees who belong to the IT department.
@@ -66,18 +66,17 @@ WHERE salary > 50000;
 
 Explanation
 
-```sql
 * SELECT first_name, salary → choose the columns to display
 * FROM employees → get data from the employees table
 * WHERE salary > 50000 → only return employees earning more than 50,000
-```
+
 
 ## MULTIPLE CONDITIONS EXAMPLE
 
 ```sql
 SELECT *
-FROM <i></i>customers</i>
-WHERE <i>country = 'USA' AND age > 25;</i>
+FROM customers
+WHERE country = 'USA' AND age > 25;
 ```
 
 Returns customers who:
