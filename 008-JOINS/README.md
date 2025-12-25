@@ -20,25 +20,22 @@ A JOIN in SQL is used to combine rows from two or more tables based on a related
 
 ### SYNTAX
 
-   <i>SELECT columns
-
+```sql
+SELECT columns
 FROM table1
-
 INNER JOIN table2
-
-ON table1.column = table2.column;</i>
+ON table1.column = table2.column;
+```
 
 Example 
 
-<i>SELECT employees.name, departments.department_name
-
+```sql
+SELECT employees.name, departments.department_name
 FROM employees
-
 INNER JOIN departments
-
-ON employees.department_id = departments.id;</i>
-
+ON employees.department_id = departments.id;
 Only employees that belong to a department will be shown.
+```
 
 2. LEFT JOIN (LEFT OUTER JOIN)
 
@@ -47,23 +44,21 @@ If there is no match, the result is NULL.
 
 ### SYNTAX
 
-<i>SELECT columns
-
+```sql
+SELECT columns
 FROM table1
-
 LEFT JOIN table2
-
 ON table1.column = table2.column;</i>
+```
 
 ### Example
 
-<i>SELECT employees.name, departments.department_name
-
+```sql
+SELECT employees.name, departments.department_name
 FROM employees
-
 LEFT JOIN departments
-
-ON employees.department_id = departments.id;</i>
+ON employees.department_id = departments.id;
+```
 
 * Shows all employees, even those without a department.
 
@@ -74,13 +69,12 @@ Unmatched values from the left table return NULL.
 
 ### Example
 
-<i> SELECT employees.name, departments.department_name
-
+```sql
+SELECT employees.name, departments.department_name
 FROM employees
-
 RIGHT JOIN departments
-
-ON employees.department_id = departments.id;</i>
+ON employees.department_id = departments.id;
+```
 
 * Shows all departments, even if no employee is assigned.
 
@@ -91,13 +85,12 @@ If there is no match, the result contains NULL.
 
 ### Example
 
-<i>SELECT employees.name, departments.department_name
-
+```sql
+SELECT employees.name, departments.department_name
 FROM employees
-
 FULL JOIN departments
-
-ON employees.department_id = departments.id;</i>
+ON employees.department_id = departments.id;
+```
 
 5. SELF JOIN
 
@@ -105,23 +98,20 @@ ON employees.department_id = departments.id;</i>
 
   ### SYNTAX
 
-  <i>SELECT a.column1, b.column2
-
+```sql
+SELECT a.column1, b.column2
 FROM table a
-
 JOIN table b
-
-ON a.column = b.column; </i>
+ON a.column = b.column; 
+```
 
 ### EXAMPLE
-
-<i>SELECT e1.name AS Employee, e2.name AS Manager
-
+```sql
+SELECT e1.name AS Employee, e2.name AS Manager
 FROM employees e1
-
 JOIN employees e2
-
-ON e1.manager_id = e2.id;</i>
+ON e1.manager_id = e2.id;
+```
 
 ### Explanation:
 
@@ -133,23 +123,21 @@ This query lists employees along with their managers, assuming manager_id in emp
 
 ### SYNTAX
 
-<i>SELECT columns
-
+```sql
+SELECT columns
 FROM table1
-
 JOIN table2 ON table1.column = table2.column
-
-JOIN table3 ON table2.column = table3.column;</i>
+JOIN table3 ON table2.column = table3.column;
+```
 
 ### Example
 
-<i>SELECT employees.name, departments.department_name, locations.city
-
+```sql
+SELECT employees.name, departments.department_name, locations.city
 FROM employees
-
 INNER JOIN departments ON employees.department_id = departments.id
-
-INNER JOIN locations ON departments.location_id = locations.id;</i>
+INNER JOIN locations ON departments.location_id = locations.id;
+```
 
 ### Explanation:
 
