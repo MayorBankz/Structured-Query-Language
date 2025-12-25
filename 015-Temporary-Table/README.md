@@ -38,6 +38,7 @@ Depending on the database system:
 
   ### BASIC SYNTAX (LOCAL TEMPORARY TABLE)
 
+```sql
   
     CREATE TEMPORARY TABLE temp_orders (
     
@@ -45,9 +46,11 @@ Depending on the database system:
     
     total_amount DECIMAL(10,2)
 );
+```
 
 ### INSERT DATA
 
+```
 INSERT INTO temp_orders
 
 SELECT order_id, total_amount
@@ -56,13 +59,17 @@ FROM orders
 
 WHERE total_amount > 500000;
 
+```
+
 ### USE THE TABLE
 
+```sql
 SELECT * FROM temp_orders;
-
+```
 ### DROP THE TABLE 
-
+```sql
 DROP TABLE temp_orders;
+```
 
 ### TEMPORARY TABLE VS REGULAR TABLE
 | Temporary Table | Regular Table |
