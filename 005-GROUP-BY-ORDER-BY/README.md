@@ -27,11 +27,11 @@ It is mostly used together with aggregate functions like:
 
 ### Example
 
+```sql
 SELECT Country, COUNT(*) AS TotalCustomers
-
 FROM Customers
-
 GROUP BY Country;
+```
 
 ### What it does:
 Groups all customers by country and returns how many customers are in each country.
@@ -48,11 +48,11 @@ You can sort:
 
 ### Example
 
+```sql
 SELECT * 
-
 FROM Products
-
 ORDER BY Price DESC;
+```
 
 ### What it does:
 
@@ -64,13 +64,12 @@ You can first group the data, then order the grouped results.
 
 ### Example
 
+```sql
 SELECT Department, COUNT(*) AS StaffCount
-
 FROM Employees
-
 GROUP BY Department
-
 ORDER BY StaffCount DESC;
+```
 
 ### What it does:
 
