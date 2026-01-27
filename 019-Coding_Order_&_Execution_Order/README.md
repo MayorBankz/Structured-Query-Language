@@ -5,7 +5,7 @@
 ---
 ### CODING ORDER
 
-```
+```sql
 SELECT DISTINCT TOP 2
     COL 1
     SUM(COL2)
@@ -15,7 +15,7 @@ GROUP BY COL 1
 HAVING SUM(COL 2) > 30
 ORDER BY COL 1 ASC
 ```
----
+---sql
 ### EXECUTION ORDER 
 1. `FROM`
 2. `WHERE`
