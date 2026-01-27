@@ -2,6 +2,7 @@
 ## Date - 13-12-2025
 ## TOOL - MySQL
 
+---
 ## LIMIT IN SQL
 
 What is LIMIT?
@@ -16,6 +17,8 @@ Why use LIMIT?
 
 * To return only top results (e.g., top 5 records)
 
+---
+
 ### Example
 
 ```sql
@@ -27,6 +30,8 @@ LIMIT 5;
 Explanation:
 This query returns only the first 5 rows from the employees table.
 
+---
+
 ## USING LIMIT WITH OFFSET
 
 Example
@@ -37,12 +42,38 @@ FROM employees
 LIMIT 5 OFFSET 10;
 ```
 
+---
+
 ### Explanation:
 
 OFFSET 10 skips the first 10 rows
 
 LIMIT 5 returns the next 5 rows
 
+---
+
+## TOP IN SQL
+`TOP` in SQL is used to limit the number of rows returned by a query.
+
+Basic Syntax 
+```
+    SELECT TOP 5 *
+    FROM customers;
+```
+👉 This returns only the first 5 rows from the result.
+
+With Ordering: 
+```
+SELECT TOP 3 *
+FROM orders
+ORDER BY order_date DESC;
+```
+👉 This returns the latest 3 orders.
+
+In short:
+TOP = “show me only the first N results” 👍
+
+--- 
 
 ## ALIASING IN SQL
 
@@ -57,6 +88,7 @@ Why use Aliases?
 
 * Simplifies long or complex names
 
+---
 #### Example
 
 ```sql
@@ -67,6 +99,8 @@ FROM employees;
 Explanation:
 
 The column salary will appear as monthly_salary in the result.
+
+---
 
 ### Table Alias
 
@@ -81,6 +115,7 @@ Explanation:
 
 * Makes the query cleaner and easier to write
 
+---
 ### Alias Without AS
 
 AS is optional in most SQL databases.
@@ -89,6 +124,8 @@ AS is optional in most SQL databases.
 SELECT salary monthly_salary
 FROM employees e;
 ```
+
+---
 
 ## COMBINING ORDER BY with LIMIT in SQL
 
@@ -106,6 +143,7 @@ Why Use Them Together?
 
 * Lowest 3 prices
 
+---
 
 ### EXAMPLE
 
@@ -116,12 +154,14 @@ ORDER BY salary DESC
 LIMIT 5;
 ```
 
+---
 ### Explanation:
 
 * ORDER BY salary DESC → sorts salaries from highest to lowest
 
 * LIMIT 5 → returns only the top 5 employees
 
+---
 
 ## USING OFFSET WITH ORDER BY and LIMIT
 
@@ -132,6 +172,7 @@ ORDER BY employee_id
 LIMIT 5 OFFSET 10;
 ```
 
+---
 ### Explanation:
 
 * Orders records by employee_id
@@ -140,6 +181,7 @@ LIMIT 5 OFFSET 10;
 
 * Returns the next 5 rows
 
+---
 ### SUMMARY
 
 | CLAUSE | PURPOSE |
@@ -150,6 +192,7 @@ LIMIT 5 OFFSET 10;
 | LIMIT | Restricts number of rows returned |
 | OFFSET | skips rows before returning results |
 
+---
 ## Practical example 
 
 ### LIMIT
@@ -158,18 +201,22 @@ LIMIT 5 OFFSET 10;
   
 <img width="865" height="493" alt="image" src="https://github.com/user-attachments/assets/e836a60d-151b-42b9-8550-1c38103c4335" />
 
+---
+
 ### LIMIT & ORDER BY
 
 * SELECT all columns FROM table (employee_demographics), arrange the age  ascending order (ORDER BY) and LIMIT the rows to 3
     
 <img width="886" height="508" alt="image" src="https://github.com/user-attachments/assets/c74724de-7abf-40f8-809f-64baa01a178e" />
 
+---
 ### LIMIT with OFFSET
 
 * SELECT all columns FROM table (employee_demographics), arrange the age  ascending order (ORDER BY) and LIMIT the rows to 5 omit the first 3 rows (OFFSET)
   
 <img width="861" height="515" alt="image" src="https://github.com/user-attachments/assets/658de26e-38a5-453b-b2dd-f7ed534c5a0d" />
 
+---
 
 ### ALIASING 
 
