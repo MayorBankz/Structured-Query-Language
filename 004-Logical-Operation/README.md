@@ -2,7 +2,7 @@
 ## Date - 09-12-25
 ## Tool - MySQL
 
-## Logical Operations 
+### Logical Operations 
 
 Logical operations in SQL are used to combine, filter, and control how conditions work inside a query—especially in the WHERE clause. They help SQL decide which rows should be returned.
 
@@ -90,8 +90,9 @@ WHERE Email IS NULL;
 
 Returns students without an email address.
 
+---
 
-## SUMMARY TABLE
+### SUMMARY TABLE
 
 | Logical Operation | Meaning | Example |
 | ----------------- | ------- | ------- |
@@ -103,8 +104,9 @@ Returns students without an email address.
 | LIKE | Pattern matching | Name like 'j%' |
 | IS NULL | Check for empty value | Email is NULL |
 
+---
 
-## PRACTICAL - MySQL
+### PRACTICAL - MySQL
 
 1. AND
 
