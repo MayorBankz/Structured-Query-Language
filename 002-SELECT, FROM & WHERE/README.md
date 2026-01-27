@@ -20,6 +20,8 @@ Example
 
 * This query retrieves only the first_name and last_name columns from the employees table.
 
+---
+
 ## FROM
 The FROM clause tells SQL which table to get the data from.
 
@@ -32,6 +34,8 @@ SELECT *
 FROM products;
 ```
 * means select all columns from the products table.
+  
+---
 
 ## WHERE 
 The WHERE clause is used to filter rows based on a condition.
@@ -55,6 +59,8 @@ WHERE department = 'IT';
 
 * This returns only employees who belong to the IT department.
 
+---
+
 ## PUTTING THEM ALL TOGETHER
 Full example query 
 
@@ -70,6 +76,7 @@ Explanation
 * FROM employees → get data from the employees table
 * WHERE salary > 50000 → only return employees earning more than 50,000
 
+---
 
 ## MULTIPLE CONDITIONS EXAMPLE
 
@@ -83,6 +90,7 @@ Returns customers who:
 * Live in the USA
 * Are older than 25
 
+---
 
 ## Practical Example - MySQL
 
@@ -91,14 +99,19 @@ A database parks and recreation is used in this session. It consists of the foll
 * employee_salary
 * parks_departments
 
+---
+
 ## Table 1 - employee_demographics
 
 <img width="910" height="511" alt="image" src="https://github.com/user-attachments/assets/66a54abd-ee7a-4e33-b0ab-ef010395390c" />
+
+---
 
 ## Table 2 - employee_salary
 
 <img width="962" height="546" alt="image" src="https://github.com/user-attachments/assets/428a56b2-68a3-4c38-9970-6c3ae478c22c" />
 
+---
 
 ### Task 1
 Using the "SELECT & FROM" query to view the entire table
