@@ -2,18 +2,23 @@
 ## Date - 12-12-2025
 ## Tool - MySQL
 
+---
 
-## Understanding WHERE and HAVING
+### Understanding WHERE and HAVING
 
 When working with SQL, you will often need to filter data.
 
 WHERE and HAVING both helps you filter records - but they are used at different stages in a query.
+
+---
 
 ### WHERE CLAUSE
 
 Purpose:
 
 To filter rows before any grouping or aggregation happens .
+
+---
 
 ### When is WHERE used?
 * When you want to filter individual rows.
@@ -31,18 +36,23 @@ WHERE City = 'Lagos';
 
 Here, SQL checks each row and only returns rows that meet the condition.
 
+---
 
-## HAVING CLAUSE
+### HAVING CLAUSE
 
-### Purpose 
+Purpose 
 
 To filter groups after aggregation
+
+---
 
 ### When is HAVING used?
 
 * When you use GROUP BY.
 
 * When you filter results based on aggregate functions like SUM(), COUNT(), MAX(), etc.
+
+---
 
 ### Example 
 
@@ -61,7 +71,9 @@ Here:
 
 * Then uses HAVING to filter only cities with more than 5 customers.
 
-## Simple Difference Between WHERE and HAVING
+---
+
+### Simple Difference Between WHERE and HAVING
 
 | Feature | WHERE | HAVING |
 | ------- | ----- | ------ |
@@ -70,6 +82,9 @@ Here:
 | Used before GROUP BY | Yes | No |
 | Used after GROUP BY | No | Yes |
 | Works with aggregate functions (SUM, COUNT, etc.) | No | 
+
+
+---
 
 ### Example - Showing Both Together 
 Find cities where:
@@ -94,22 +109,22 @@ Key Takeaways (Easy Memory Trick)
 
 * HAVING = Filter groups after aggregation
 
+---
 
-## Practical - 
-### HAVING
+## Practical -  HAVING
 
 * Select the column gender, and aggregate using AVG(age) from table (employee_demographics) then group by gender HAVING AVG(age) greater than 40
   
 <img width="915" height="478" alt="image" src="https://github.com/user-attachments/assets/c8a88cb1-44f6-4e1e-9e51-4e59de992506" />
 
-
+---
 ### WHERE 
 
 * Select the column occupation, and aggregate using AVG(salary) from table (employee_salary) WHERE occupation LIKE '%manager% group by occupation
 
 <img width="891" height="477" alt="image" src="https://github.com/user-attachments/assets/b70630af-29d2-44b9-bf49-b6ae2a776c7d" />
 
-
+---
 ### WHERE and HAVING 
 
 * WHERE is used before the GROUP BY function
