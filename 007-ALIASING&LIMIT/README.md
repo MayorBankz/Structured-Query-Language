@@ -56,14 +56,14 @@ LIMIT 5 returns the next 5 rows
 `TOP` in SQL is used to limit the number of rows returned by a query.
 
 Basic Syntax 
-```
+```sql
     SELECT TOP 5 *
     FROM customers;
 ```
 👉 This returns only the first 5 rows from the result.
 
 With Ordering: 
-```
+```sql
 SELECT TOP 3 *
 FROM orders
 ORDER BY order_date DESC;
