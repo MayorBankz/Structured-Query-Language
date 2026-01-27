@@ -25,11 +25,15 @@ Example
 2. Multiplication - 2 x 4 = 8
 3. Addition - 8 + 8 = 16
 
+---
+
 ## DISTINCT 
 
 DISTINCT is used in SQL to remove duplicate values from a result set.
 
 It ensures that only unique values are returned.
+
+---
 
 ### Simple Example 
 Assume you have a table called customers 
@@ -55,6 +59,8 @@ Result
 
 * SQL will return only unique countries, even though "USA" appears multiple times.
 
+---
+
 ### Another example with multiple columns
 ```sql
 SELECT DISTINCT Country, CustomerName
@@ -63,6 +69,7 @@ FROM Customers;
 
 * This returns unique combinations of Country + CustomerName
 
+---
 
 ## Practical - PEMDAS + DISTINCT
 
