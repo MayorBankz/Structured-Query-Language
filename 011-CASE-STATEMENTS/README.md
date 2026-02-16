@@ -84,6 +84,34 @@ END;
 
 Active users are listed first.
 
+## Case Statement Rules
+* The data type of the result must be matching
+
+## Quick Form & Full Form
+* FULL FORM
+Syntax
+```sql
+CASE
+   WHEN Country = 'Germany' THEN 'DE'
+   WHEN Country = 'India' THEN 'IN'
+   WHEN Country = 'United States' THEN 'US'
+   WHEN Country = 'France' THEN 'FR'
+ELES 'N/A'
+END
+```
+
+* QUICK FORM
+
+```sql
+CASE Country
+   WHEN 'Germany' THEN 'DE'
+   WHEN 'India' THEN 'IN'
+   WHEN 'United States' THEN 'US'
+   WHEN 'France' THEN 'FR'
+ELSE 'N/A'
+END
+```   
+
 ### Important Notes
 * CASE must end with END
 * ELSE is optional (returns NULL if omitted)
