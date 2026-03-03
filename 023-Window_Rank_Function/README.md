@@ -147,6 +147,7 @@ If two rows tie:
 
 Example: 
 | Sales | Rank |
+| ----- | ---- |
 | 500 | 1 |
 | 400 | 2 |
 | 400 | 2 |
