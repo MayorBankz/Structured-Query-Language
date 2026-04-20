@@ -53,8 +53,11 @@ Avoid relying blindly when:
 ---
 
 ### **WHEN TO USE AI FOR SQL**
-🔷 **Solve an SQL Task**
-_PROMPT_
+
+### 🔷 **Solve an SQL Task**
+
+#### _PROMPT_
+
 In my SQL server database, we have two tables:
 The first table is `Orders` with the following `Columns`: `Order_id`, `sales`, `customer_id`, `product_id`.
 The second table is `customers` with the following columns: `customer_id`, `first_name`, `last_name`, `country`.
@@ -67,8 +70,10 @@ Do the following:
 
 ---
 
-🔷 **Improve the Readability**
-_PROMPT_
+### 🔷 **Improve the Readability**
+
+#### _PROMPT_
+
 The following SQL server query is long and hard to understand
 Do the following:
 * Improve it's readability.
@@ -78,8 +83,10 @@ Do the following:
 
 ---
 
-🔷 **Optimize the performance query**
-_PROMPT_
+### 🔷 **Optimize the performance query**
+
+#### _PROMPT_
+
 The following SQL server query is slow.
 Do the following:
 * Propose optimization to improve it's performance
@@ -88,8 +95,9 @@ Do the following:
 
 ---
 
-🔷 **Optimize Execution Plan**
-_PROMPT_
+### 🔷 **Optimize Execution Plan**
+
+#### _PROMPT_
 The _image_ is the execution plan of SQL server query.
 Do the following:
 * Describe the execution plan step by step 
@@ -100,8 +108,10 @@ Do the following:
 
 ---
 
-🔷 **Debugging**
-_PROMPT_
+### 🔷 **Debugging**
+
+#### _PROMPT_
+
 The following SQL server query causing this error: [Error Message Goes Here]
 Do the following:
 * Explain the error message
@@ -111,8 +121,10 @@ Do the following:
 
 ---
 
-🔷 **Explain the Result**
-_PROMPT_
+### 🔷 **Explain the Result**
+
+#### _PROMPT_
+
 I didn't understand the result of the following SQL server query
 Do the following:
 * Break down how SQL processes the following query step by step explaining each stage and how the result is formed.
@@ -120,8 +132,10 @@ Do the following:
 
 ---
 
-🔷 **Styling & Formatting**
-_PROMPT_
+### 🔷 **Styling & Formatting**
+
+#### _PROMPT_
+
 The following SQL server query is hard to understand 
 Do the following:
 * Restyle the code to make it easier to read
@@ -132,8 +146,10 @@ Do the following:
 
 ---
 
-🔷 **Documentations & Comments**
-_PROMPT_
+### 🔷 **Documentations & Comments**
+
+#### _PROMPT_
+
 The following SQL server query lacks comments and documentations 
 Do the following
 * Insert a leading comment at the start of the query describing its overall purpose
@@ -144,8 +160,10 @@ Do the following
 
 ---
 
-🔷 **Improve Database DDL**
-_PROMPT_
+### 🔷 **Improve Database DDL**
+
+#### _PROMPT_
+
 The following SQL server DDL script has to be optimized.
 Do the following
 * Naming - Check the consistency of table/column names, prefixes, standards.
@@ -156,8 +174,10 @@ Do the following
 
 ---
 
-🔷 **Generate Test Dataset**
-_PROMPT_
+### 🔷 **Generate Test Dataset**
+
+#### _PROMPT_
+
 I need dataset for testing the following SQL server DDL
 Do the following:
 * Generate test dataset as insert statements
@@ -169,8 +189,10 @@ Do the following:
 
 ---
 
-🔷 **Create SQL Course (For Students)**
-_PROMPT_
+### 🔷 **Create SQL Course (For Students)**
+
+#### _PROMPT_
+
 Create a comprehensive SQL course with a detailed roadmap and agenda.
 Do the following:
 * Start with SQL fundamentals and advance to complex topics.
@@ -180,8 +202,10 @@ Do the following:
 
 ---
 
-🔷 **Understanding SQL Concepts**
-_PROMPT_
+### 🔷 **Understanding SQL Concepts**
+
+#### _PROMPT_
+
 I want detailed explanation about SQL Window Functions
 Do the following:
 * Explain what Window Functions are
@@ -193,8 +217,10 @@ Do the following:
 
 ---
 
-🔷 **Comparing SQL Concepts**
-_PROMPT_
+### 🔷 **Comparing SQL Concepts**
+
+#### _PROMPT_
+
 I want to understand THE differences between SQL WINDOWS and GROUP BY 
 Do the following:
 * Explain the key differences between the two concepts
@@ -204,8 +230,10 @@ Do the following:
 
 ---
 
-🔷 **Practice SQL**
-_PROMPT_
+### 🔷 **Practice SQL**
+
+#### _PROMPT_
+
 Act as an SQL trainer and help me practice SQL Window Functions
 Do the following:
 * Make it interactive practicing, you provide tasks and I give solutions
@@ -216,8 +244,10 @@ Do the following:
 
 --- 
 
-🔷 **Prepare for an SQL interview**
-_PROMPT_
+### 🔷 **Prepare for an SQL interview**
+
+#### _PROMPT_
+
 Act as an interviewer and prepare me for an SQL interview
 Do the following:
 * Ask common SQL interview questions
