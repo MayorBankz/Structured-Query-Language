@@ -1,0 +1,219 @@
+# Sql_operators_practice
+### MySQL practice queries demonstrating filtering and operators
+### TOOL - MySQL
+### DATE - 28-01-2026
+
+---
+### 📌 OVERVIEW
+
+This document contains intermediate-level SQL practice exercises focused on using comparison operators, logical operators, range operators, and search operators in MySQL.
+The queries are written using a `customers  ` table and demonstrate common filtering techniques.
+
+---
+
+### TABLE USED
+
+CUSTOMERS
+
+| COLUMN | DESCRIPTION |
+| ------ | ----------- |
+| id | Unique cusotmer identifier |
+| first_name | customer's first name |
+| country | Customer's country |
+| Score | Customer score |
+
+---
+
+🔷 Common Operator Tasks
+
+1. Retrieve all customers from Germany
+
+```sql
+SELECT *
+FROM customers
+WHERE country = 'Germany'
+;
+```
+📌 Filters customers whose country is Germany
+
+---
+
+2. Retrieve all customers who are not from Germany
+
+```sql
+SELECT *
+FROM customers
+WHERE country != 'Germany';
+```
+📌 Returns customers who are not from Germany
+
+---
+
+3. Retrieve all customers with a score greater than 500
+
+```sql
+SELECT *
+FROM customers
+WHERE score > 500
+;
+```
+
+📌 Selects customers whose score exceeds 500
+---
+
+4. Retrieve all customers with a score of 500 or more
+
+```sql
+SELECT *
+FROM customers
+WHERE score >= 500;
+```
+
+📌 Includes customers with scores equal to or above 500
+
+---
+
+5. Retreive all customers with a score less than 500
+
+```sql
+SELECT *
+FROM customers
+WHERE score < 500;
+```
+
+📌 Filters customers with scores below 500.
+
+---
+
+6. Retrieve all customers with a score of 500 or less
+
+```sql
+SELECT *
+FROM customers
+WHERE score <= 500;
+```
+
+📌 Includes customers with scores equal to or below 500.
+
+---
+
+🔷 Logical Operator Tasks
+
+1. Retrieve all customers from the USA with a score greater than 500
+
+```sql
+SELECT *
+FROM customers
+WHERE country = 'usa' AND score > 500;
+```
+📌 Uses `AND` to apply multiple conditions simultaneously.
+
+---
+
+2. Retrieve customers who are either from the USA or have a score greater than 500
+
+```sql
+SELECT *
+FROM customers
+WHERE country = 'usa' OR score > 500;
+```
+
+📌 Uses `OR` to return records that satisfy at least one condition.
+
+---
+
+3. Retrieve customers with a score not less than 500
+```sql
+SELECT *
+FROM customers
+WHERE score >= 500;
+```
+📌 “Not less than” translates to `>=.`
+
+---
+
+🔷 Range Operator Tasks
+
+1. Retrieve customers whose score is between 100 and 500
+
+```sql
+SELECT *
+FROM customers
+WHERE score BETWEEN 100 AND 500;
+```
+
+📌 `BETWEEN` is inclusive of both boundary values.
+
+---
+
+2. Retrieve customers from either Germany or the USA
+
+```sql
+SELECT *
+FROM customers
+WHERE country IN ('germany', 'usa');
+```
+
+📌 IN simplifies multiple OR conditions.
+
+---
+
+🔷 Search Operator Tasks (LIKE)
+
+1. Find customers whose first name starts with 'M'
+   
+```sql
+SELECT *
+FROM customers
+WHERE first_name LIKE 'm%';
+```
+
+📌 `%` matches any number of characters after the letter.
+
+---
+
+2. Find customers whose first name ends with 'n'
+
+```sql
+SELECT *
+FROM customers
+WHERE first_name LIKE '%n';
+```
+
+📌 `%` before the letter allows any starting characters.
+
+---
+
+3. Find customers whose first name contains 'r'
+
+```sql
+SELECT *
+FROM customers
+WHERE first_name LIKE '%r%';
+```
+📌 Matches names where `r` appears anywhere.
+
+---
+
+4. Find customers whose first name has 'r' as the third character
+
+```sql
+SELECT *
+FROM customers
+WHERE first_name LIKE '__r%';
+```
+
+---
+
+📌 
+* _represents one character
+* __`r` ensures `r` is in the third position
+
+---
+
+## KEY CONCEPTS PRACTICED
+* Comparison operators (`=`, `!=`, `>`, `<`, `>=`, `<=`)
+* Logical operators (`AND`, `OR`)
+* Range operators (`BETWEEN`, `IN`)
+* Search patterns using `LIKE`
+* Filtering data with `WHERE`
